@@ -52,12 +52,9 @@ Controller for the discover page
 /*
 Controller for the favorites page
 */
-.controller('FavoritesCtrl', function($scope) {
+.controller('FavoritesCtrl', function($scope, User) {
 //get the list of our favorites from the user service
   $scope.favorites = User.favorites;
-  $scope.removeSong = function(song, index) {
-    User.removeSongFromFavorites(song, index);
-  }
 })
 
 

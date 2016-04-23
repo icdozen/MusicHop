@@ -14,4 +14,5 @@ o.addSongToFavorites = function(song, index) {
 
     //add to favorites array
     o.favorites.splice(index, 1);
-  }
+}
+
